@@ -19,7 +19,7 @@ nvm install node
 npm install -g @angular/cli
 ```
 ```bash
-* git clone https://github.com/sarthak212/Resurgence_SMVDU.git
+git clone https://github.com/sarthak212/Resurgence_SMVDU.git
 ```
 
 ```bash
