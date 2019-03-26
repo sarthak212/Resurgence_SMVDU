@@ -1,0 +1,78 @@
+:host{
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to right,#282828,#303030,#404040,#505050);
+    background-size: cover;
+}
+.paragraph{
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    align-content: center;
+    width: 40vw;
+    height: 40vh;
+}
+.paragraph span{
+   font-family: 'Roboto Mono', monospace;
+   font-size: 1.4rem;
+   display: flex;
+   float: left;
+   padding: 3px;
+   color: white;
+   height: 10%;
+   transition: all .1s;
+   overflow: hidden;
+}
+#firstimage{
+    position: fixed;
+    margin-left: 37vw;
+    margin-top: 4px;
+    width: 30%;
+    height:45%;
+    transform: rotateZ(-90deg);
+}
+#secondimage{
+    float: right;
+    position: absolute;
+    margin-top: 5vw;
+    margin-left: 25vw;
+    width: 20%;
+    height: 34%;
+    transform: rotateZ(-90deg);
+}
+#thirdimage{
+    float: right;
+    clear: right;
+    position: absolute;
+    margin-top: 23vw;
+    margin-left: 35vw;
+    width:30%;
+    height: 40%;
+}
+#fourthimage{
+    float: right;
+    position: absolute;
+    width:20%;
+    height: 30%;
+    margin-top: 52vh;
+    margin-left: 22vw;
+    transform: rotateZ(-90deg);
+}
+h1{
+    float: left;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4rem;
+    width: 15%;
+    margin-left: 20vw;
+    margin-top: 20px;
+    color: rgb(189, 60, 28);
+}
+span:hover{
+    transform: rotateY(180deg);
+}

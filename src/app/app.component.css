@@ -1,0 +1,145 @@
+.social{
+    list-style-type: none;
+    position: fixed;
+    background-color: #f7fcfa;
+    bottom: 0px;
+    left: 0px;
+    height: 10%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 20%;
+    width: 100%;
+    margin:0px;
+}
+.socialnetworking{
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin-bottom:0px;
+    margin-top:10px;
+}
+a{
+    outline: 0;
+}
+img{
+    width:30%;
+    height: 30%; 
+}
+#hiddenfirst{
+    display: none;
+}
+#firstinsta:hover #hiddensecond{
+    display:inline-block;
+}
+#firstinsta:hover #hidesecond{
+    display:none;
+}
+#hiddensecond{
+    display: none;
+}
+#firstface:hover #hiddenfirst{
+    display:block;
+}
+#firstface:hover #hidefirst{
+    display:none;
+}
+#hiddenthird{
+    display: none;
+}
+#firsttwitter:hover #hiddenthird{
+    display:block;
+}
+#firsttwitter:hover #hidethird{
+    display:none;
+}
+section{
+    transform: scale(0);
+    transform-origin: 2% 4%;
+    position: fixed;
+    background-color: black;
+    opacity:.7;
+    top:0;
+    left:0;
+    height: 100vh;
+    width:100%;
+    transition:all .7s;
+}
+.navbaricon{
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    width:30px;
+    height:30px;
+}
+.bar{
+    position: relative;
+    display: block;
+    width:110%;
+    height:20%;
+    margin-top:20%;
+    background-color: white;
+    border-radius:30%;
+    transition:all 1s;
+}
+.firstbarslide{
+    background-color: white;
+    transform: translate(40%,390%) rotate(45deg);
+}
+.thirdbarslide{
+    background-color: white;
+    transform: translate(40%,15%) rotate(-45deg);
+}
+.secondbarslide{
+    transform: scale(0);
+    background-color: white;
+}
+.navigationactive{
+    transform: scale(1);
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size:25px;
+    font-family: 'Baloo Chettan', cursive;
+}
+.navbar li{
+    margin-top:3%;
+    margin-left:3%;
+}
+.navbar li:first-child{
+    margin-top:7%;
+}
+@keyframes popup{
+    from{
+        transform: translateX(-200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.popuplink{
+    animation-name: popup;
+    animation-duration: .8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+.popfirst{
+    animation-delay: 0;
+}
+.popsecond{
+    animation-delay: .1s;
+}
+.popthird{
+    animation-delay: .2s;
+}
+.popfourth{
+    animation-delay: .3s;
+}
+.popfifth{
+    animation-delay: .4s;
+}
+.popsixth{
+    animation-delay: .5s;
+}
+.popseventh{
+    animation-delay: .6s;
+}

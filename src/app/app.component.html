@@ -1,0 +1,29 @@
+<div [@routeroutlet]="getAnimationdata(router)">
+<router-outlet #router="outlet"></router-outlet>
+</div>
+<ul class="social">
+        <li class="socialnetworking firstim"><a (click)="facebookLink()" id="firstface" ><img  id="hidefirst" src="assets/images/icons/facebook(1).jpg" alt="">
+        <img id="hiddenfirst" src="../assets/images/icons/facebook.png" alt=""></a></li>
+        <li class="socialnetworking"><a id="firstinsta" (click)="instagramLink()"><img id="hidesecond" src="../assets/images/icons/instagram(1).png" alt="">
+        <img id="hiddensecond" src="../assets/images/icons/instagram.png" alt=""></a></li>
+        <li></li>
+        <li class="socialnetworking third"><a id="firsttwitter" (click)="twitterLink()"><img id="hidethird" src="../assets/images/icons/twitter(1).png" alt="">
+        <img id="hiddenthird" src="../assets/images/icons/twitter.png" alt=""></a></li>
+</ul>
+<section [ngClass]="{navigationactive:navigationbar}">
+    <ul class="navbar">
+        <li [ngClass]="{'popuplink popfirst':navigationbar}"><a (click)="navigationbar=!navigationbar" routerLink="">Home</a></li>
+        <li [ngClass]="{'popuplink popsecond':navigationbar}"><a (click)="navigationbar=!navigationbar" routerLink="about">About</a></li>
+        <li [ngClass]="{'popuplink popthird':navigationbar}"><a (click)="navigationbar=!navigationbar" routerLink="event">Events</a></li>
+        <li [ngClass]="{'popuplink popfourth':navigationbar}"><a (click)="navigationbar=!navigationbar" routerLink="gallery">Gallery</a></li>
+        <li [ngClass]="{'popuplink popsixth':navigationbar}"><a (click)="navigationbar=!navigationbar || registerLink()" routerLink="">Register</a></li>
+        <li [ngClass]="{'popuplink popseventh':navigationbar}"><a (click)="navigationbar=!navigationbar" routerLink="front">Team</a></li>
+    </ul>
+</section>
+<a (click)="navigationbar=!navigationbar" class="navlink">
+        <div class="navbaricon">
+            <div [ngClass]="{bar: true,firstbarslide:navigationbar}"></div>
+            <div [ngClass]="{bar: true,secondbarslide:navigationbar}"></div>
+            <div [ngClass]="{bar: true,thirdbarslide:navigationbar}"></div>
+        </div>
+</a>

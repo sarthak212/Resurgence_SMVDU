@@ -1,0 +1,404 @@
+:host{
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top:0;
+    left:0;
+}
+.bubblesclass{
+    position: fixed;
+    width: 6%;
+    height: 10%;
+    float: left;
+    border-radius: 50%;
+    z-index: -1;
+}
+.showimage{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    transition: all 1s;
+    opacity: 0;
+    filter: blur(20px);
+}
+.bubblesclass:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    z-index: -1;
+}
+.bubblesclass:hover:before{
+    display: none;
+}
+.bubblesclass:hover img{
+      z-index: 10;
+      border-radius: 10%;
+      transform: scale(3);
+      opacity: 1;
+      filter: none;
+}
+.bubblesclass:hover{
+  animation-play-state: paused;
+}
+#image0:before{
+    background-color: rgb(238, 216, 117);
+}
+#image0{
+    margin-top: 60vh;
+    margin-left: -12vh;
+    animation-name: tras;
+    animation-duration: 26s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#image1:before{
+    background-color: rgb(231, 126, 100);
+}
+#image1{
+    margin-top:85vh;
+    margin-left: 20vh;
+    animation-name: tras1;
+    animation-duration: 26s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#image2:before{
+    background-color: rgb(195, 247, 128);
+}
+#image2{
+    margin-top: 40vh;
+    margin-left: 210vh;
+    animation-name: tras2;
+    animation-duration: 26s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#image3:before{
+    background-color: rgb(118, 203, 243);
+}
+#image3{
+    margin-top: 40vh;
+    margin-left: -5vh;
+    animation-name: tras3;
+    animation-duration: 27s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#image4:before{
+    background-color: rgb(247, 150, 234);
+}
+#image4{
+    margin-top: 0vh;
+    margin-left: 100vh;
+    animation-name: tras4;
+    animation-duration: 27s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#image5:before{
+    background-color: rgb(212, 126, 83);
+}
+#image5{
+    margin-top: 10vh;
+    margin-left: 210vh;
+    animation-name: tras5;
+    animation-duration: 27s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#image6:before{
+    background-color: lightgrey;
+}
+#image6{
+    margin-top: 79vh;
+    margin-left: 170vh;
+    animation-name: tras6;
+    animation-duration: 27s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes tras{
+    0%{
+        transform: translate(0vh,0vh);
+    }
+    20%{
+        transform: translate(30vh,30vh);
+    }
+    40%{
+        transform : translate(100vh,-70vh);
+    }
+    60%{
+        transform: translate(100vh,24vh);
+    }
+    80%{
+        transform: translate(200vh,-70vh);
+    }
+    100%{
+        transform: translate(-5vh,20vh);
+    }
+}
+@keyframes tras1{
+    0%{
+        transform: translate(0vh,0vh);
+    }
+    20%{
+        transform: translate(-20vh,-85vh);
+    }
+    40%{
+        transform: translate(50vh,9vh);
+    }
+    60%{
+        transform: translate(120vh,-90vh);
+    }
+    80%{
+        transform: translate(200vh,-2vh);
+    }
+    100%{
+        
+    }
+}
+@keyframes tras2{
+    0%{
+        transform: translate(0vh,0vh);
+    }
+    20%{
+        transform: translate(-30vh,-45vh);
+    }
+    40%{
+        transform: translate(-40vh,48vh);
+    }
+    60%{
+        transform: translate(-60vh,-50vh);
+    }
+    80%{
+        transform: translate(-170vh,50vh);
+    }
+    100%{
+        transform: translate(-200vh,-50vh);
+    }
+}
+@keyframes tras3{
+    0%{
+        transform: translate(0vh,0vh);
+    }
+    20%{
+        transform: translate(80vh,40vh);
+    }
+    40%{
+        transform: translate(80vh,-50vh);
+    }
+    60%{
+        transform: translate(80vh,40vh);
+    }
+    80%{
+        transform: translate(200vh,-50vh);
+    }
+    100%{
+        transform: translate(-5vh,10vh);
+    }
+}
+@keyframes tras4{
+    0%{
+        transform: translate(0vh,0vh);
+    }
+    20%{
+        transform: translate(-100vh,20vh);
+    }
+    40%{
+        transform: translate(10vh,90vh);
+    }
+    60%{
+        transform: translate(10vh,-8vh);
+    }
+    80%{
+        transform: translate(-90vh,90vh);
+    }
+    100%{
+        transform: translate(90vh,-7vh);
+    }
+}
+@keyframes tras5{
+    0%{
+        transform: translate(0vh,0vh);
+    }
+    20%{
+        transform: translate(-220vh,20vh);
+    }
+    40%{
+        transform: translate(-30vh,-20vh);
+    }
+    60%{
+        transform: translate(10vh,40vh);
+    }
+    80%{
+        transform: translate(-30vh,-10vh);
+    }
+    100%{
+        transform: translate(-90vh,70vh);
+    }
+}
+@keyframes tras6{
+    0%{
+        transform: translate(0vh,0vh);
+    }
+    20%{
+        transform: translate(-10vh,-90vh);
+    }
+    40%{
+        transform: translate(-40vh,9vh);
+    }
+    60%{
+        transform: translate(-50vh,-80vh);
+    }
+    80%{
+        transform: translate(-100vh,10vh);
+    }
+    100%{
+        transform: translate(-150vh,-90vh);
+    }
+}
+@font-face{
+    font-family: neontext;
+    src: url(/src/assets/fonts/NEON____.TTF);
+}
+#neontext{
+    margin-top:30vh;
+    z-index: 1;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1.5vw;
+    font-size: 5rem;
+    color: white;
+    text-shadow:
+    .1vw 0vw .25vw rgb(199, 250, 250),.2vw 0vw .25vw rgb(199,250,250),.4vw 0vw .25vw rgb(199,250,250),
+    .1vw 0vw  0vw rgb(164, 250, 250),.2vw 0vw  0vw rgb(164,250,250),.4vw 0vw 0vw rgb(164,250,250),
+    .1vw 0vw  .1vw rgb(137, 250, 250),.2vw 0vw .1vw rgb(137,250,250),.4vw 0vw  .1vw rgb(137,250,250),
+    .1vw 0vw   2vw rgb(124, 250, 250),.2vw 0vw  2vw rgb(124,250,250),.4vw 0vw  2vw rgb(124,250,250),
+    .1vw 0vw   1vw rgb(97, 250, 250),.2vw 0vw   1vw rgb(97,250,250),.4vw 0vw 5vw rgb(97,250,250),
+    .1vw 0vw   2.5vw rgb(53, 250, 250),.2vw 0vw   10vw rgb(53,250,250),.4vw 0vw 5vw rgb(53,250,250),
+    .1vw 0vw   5vw rgb(1, 250, 250),.2vw 0vw  10vw rgb(1,250,250),.4vw 0vw 5vw rgb(1,250,250);
+    transition: all .1s;
+}
+#neontext:hover{
+    animation-name: animateword;
+    animation-duration: .15s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animateword{
+    0%{
+     text-shadow:
+    .1vw 0vw .25vw rgb(199, 250, 250),.2vw 0vw .25vw rgb(199,250,250),.4vw 0vw .25vw rgb(199,250,250),
+    .1vw 0vw  0vw rgb(164, 250, 250),.2vw 0vw  0vw rgb(164,250,250),.4vw 0vw 0vw rgb(164,250,250),
+    .1vw 0vw  .1vw rgb(137, 250, 250),.2vw 0vw .1vw rgb(137,250,250),.4vw 0vw  .1vw rgb(137,250,250),
+    .1vw 0vw   2vw rgb(124, 250, 250),.2vw 0vw  2vw rgb(124,250,250),.4vw 0vw  2vw rgb(124,250,250);
+    }
+    100%{
+        text-shadow:
+        .1vw 0vw .25vw rgb(199, 250, 250),.2vw 0vw .25vw rgb(199,250,250),.4vw 0vw .25vw rgb(199,250,250),
+        .1vw 0vw  0vw rgb(164, 250, 250),.2vw 0vw  0vw rgb(164,250,250),.4vw 0vw 0vw rgb(164,250,250),
+        .1vw 0vw  .1vw rgb(137, 250, 250),.2vw 0vw .1vw rgb(137,250,250),.4vw 0vw  .1vw rgb(137,250,250),
+        .1vw 0vw   2vw rgb(124, 250, 250),.2vw 0vw  2vw rgb(124,250,250),.4vw 0vw  2vw rgb(124,250,250),
+        .1vw 0vw   1vw rgb(97, 250, 250),.2vw 0vw   1vw rgb(97,250,250),.4vw 0vw 5vw rgb(97,250,250),
+        .1vw 0vw   10vw rgb(53, 250, 250),.2vw 0vw   30vw rgb(53,250,250),.4vw 0vw 10vw rgb(53,250,250),
+        .1vw 0vw   20vw rgb(1, 250, 250),.2vw 0vw  30vw rgb(1,250,250),.4vw 0vw 10vw rgb(1,250,250);
+    }
+}
+.wrapper{
+    margin-left: 7vw;
+    height: .5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+#smvdutext{
+    width: 10%;
+    color: white;
+    font-family: 'Iceberg',cursive;
+    font-size: 2rem;
+    float: right;
+    position: absolute;
+    left: 90%;
+    top: 5%;
+    text-shadow: 
+    .1vw 0vw .25vw rgb(250, 179, 179),.2vw 0vw .25vw  rgb(250, 179, 179),.4vw 0vw .25vw  rgb(250, 179, 179),
+    .1vw 0vw  0vw rgb(240, 143, 143),.2vw 0vw  0vw rgb(240, 143, 143),.4vw 0vw 0vw rgb(240, 143, 143),
+    .1vw 0vw  .1vw rgb(228, 100, 100),.2vw 0vw .1vw rgb(228, 100, 100),.4vw 0vw  .1vw rgb(228, 100, 100),
+    .1vw 0vw   2vw rgb(207, 50, 50),.2vw 0vw  2vw rgb(207, 50, 50),.4vw 0vw  2vw rgb(207, 50, 50),
+    .1vw 0vw   1vw rgb(204, 27, 27),.2vw 0vw   1vw rgb(204, 27, 27),.4vw 0vw 5vw rgb(204, 27, 27);
+}
+#resurgencelogo{
+    position:bottom left;
+    width: 10vw;
+    height: 50vh;
+}
+#logoimage{
+    width: 8vw;
+    height: 16vh;
+    position: absolute;
+    bottom: 2vw;
+    left: .2vw;
+    border-radius: 50%;
+    opacity: .8;
+}
+#linevertical{
+    height: 7vh;
+    width: .3vw;
+    border-radius: 20%;
+    background-color: rgb(207, 235, 236);
+    position: absolute;
+    bottom: 12vh;
+    right: 47vw;
+}
+#arrow1{
+    height: 3vh;
+    width: .3vw;
+    border-radius: 20%;
+    background-color: rgb(207, 235, 236);
+    position: absolute;
+    bottom: 11.9vh;
+    right: 46.6vw;
+    transform: rotate(30deg);
+}
+#arrow2{
+    height: 3vh;
+    width: .3vw;
+    border-radius: 20%;
+    background-color: rgb(207, 235, 236);
+    position: absolute;
+    bottom: 11.9vh;
+    right: 47.35vw;
+    transform: rotate(-30deg);
+}
+#wrapperscroll{
+    animation-name: scrollevent;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes scrollevent{
+    0% {
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(8px);
+    }
+}
