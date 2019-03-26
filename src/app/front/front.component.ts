@@ -38,7 +38,7 @@ export class FrontComponent implements OnInit {
         this.router.navigate(['gallery']);
     } else if(delta < 0) 
     {
-        this.router.navigate(['front']);
+        this.router.navigate(['']);
     }
   }
   constructor(private router: Router) { }

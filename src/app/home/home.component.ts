@@ -48,12 +48,12 @@ export class HomeComponent implements OnInit {
     image:'../assets/images/dummyimage/index.jpeg'
   },{ image: '../assets/images/dummyimage/index1.jpeg'},
 { image: '../assets/images/dummyimage/index2.jpeg'},
-{ image: '../assets/images/dummyimage/index3.png'},
+{ image: '../assets/images/dummyimage/index3.jpeg'},
 {
   image: '../assets/images/dummyimage/index4.jpeg'
 },
 {
-  image: '../assets/images/dummyimage/index5.png'
+  image: '../assets/images/dummyimage/index5.jpeg'
 },
 {
   image: '../assets/images/dummyimage/index6.jpeg'

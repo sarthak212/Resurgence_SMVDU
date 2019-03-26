@@ -28,6 +28,19 @@ import { trigger, transition, query, style, animate, group } from '@angular/anim
 export class AppComponent {
 
   navigationbar:boolean=false;
+  registerLink(){
+    window.open("https://bit.ly/BCA19REG");
+    return true;
+  }
+  facebookLink(){
+    window.open("https://facebook.com/SMVDUresurgence");
+  }
+  twitterLink(){
+    window.open("https://twitter.com/SMVDUresurgence");
+  }
+  instagramLink(){
+    window.open("https://instagram.com/SMVDUresurgence");
+  }
   getAnimationdata(router: RouterOutlet){
     const pagedata= router.activatedRouteData['animation'];
     if(!pagedata){
