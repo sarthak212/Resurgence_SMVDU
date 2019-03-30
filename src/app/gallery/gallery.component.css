@@ -12,7 +12,7 @@
     display: table;
     perspective: 2000px;
     position: absolute;
-    margin-left: 20vw;
+    margin-left: 27vw;
     margin-top: 1vh;
     width: 25%;
     height: 100%;
@@ -22,27 +22,26 @@
     display: table;
     perspective: 2000px;
     position: absolute;
-    margin-left: 50vw;
+    margin-left: 55vw;
     margin-top: 1vh;
     height: 100%;
     width: 20%;
     box-sizing: border-box;
     transform: translateY(-213vh);
   }
-  img{
+  .galleryimage{
     display:table-cell;
     vertical-align:middle;
-    transform: rotate(-90deg);
-    height: 43vh;
-    position: relative;  
-    top: 30px; 
+    height: 58vh;
+    width: 20vw;
+    position: relative;   
   }
   .innercontainer{
     box-sizing: border-box;
     height: 71vh;
   }
   .final{
-    transform: rotate(-90deg) rotateX(0deg) rotateY(50deg);
+    transform:rotateX(0deg) rotateY(50deg);
   }
 .container {
   height: 63vh;
@@ -53,16 +52,17 @@
   overflow: hidden;
 }
 .arrowright{
-   transform:scale(.25);
+   transform:scale(.4) rotate(-90deg);
    float: right;
-   padding-right: 200px;
-   padding-top: 50px;
+   margin-top: 250px;
+   margin-right: 200px;
 }
 .arrowleft{
   float: left;
-  transform:scale(.25);
-  padding-left: 150px;
-  padding-top: 100px;
+  transform:scale(.4) rotate(-90deg);
+  margin-top: 10px;
+  margin-left: 230px;
+
 }
 #heading{
   font-size: 3rem;

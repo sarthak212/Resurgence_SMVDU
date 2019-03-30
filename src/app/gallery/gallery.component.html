@@ -3,12 +3,12 @@
 <div class="container">
                         <div class="containergallery1" #firstcontainer>
                             <div *ngFor="let a of listphoto" id="gallery{{a.id}}" class="innercontainer">
-                                <img (mousemove)="getxy($event,240)" src="{{a.src}}" (mouseleave)="changek($event)" alt="">
+                                <img class="galleryimage" (mousemove)="getxy($event,240)" src="{{a.src}}" (mouseleave)="changek($event)" alt="">
                             </div>
                         </div>
                         <div class="containergallery2" #secondcontainer>
                             <div *ngFor="let a of listphotos" id="gallery{{a.id}}" class="innercontainer">
-                                <img (mousemove)="getxy($event,491)" (mouseleave)="changek($event)" src="{{a.src}}" alt="">
+                                <img class="galleryimage" (mousemove)="getxy($event,491)" (mouseleave)="changek($event)" src="{{a.src}}" alt="">
                             </div>
                         </div>
                         <div class="arrowright">

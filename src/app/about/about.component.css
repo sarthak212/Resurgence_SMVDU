@@ -33,20 +33,18 @@
 }
 #firstimage{
     position: fixed;
-    margin-left: 37vw;
+    margin-left: 39vw;
     margin-top: 4px;
-    width: 30%;
-    height:45%;
-    transform: rotateZ(-90deg);
+    width: 21%;
+    height:52%;
 }
 #secondimage{
     float: right;
     position: absolute;
-    margin-top: 5vw;
+    margin-top: 4vw;
     margin-left: 25vw;
-    width: 20%;
-    height: 34%;
-    transform: rotateZ(-90deg);
+    width: 16%;
+    height: 40%;
 }
 #thirdimage{
     float: right;
@@ -60,11 +58,10 @@
 #fourthimage{
     float: right;
     position: absolute;
-    width:20%;
-    height: 30%;
-    margin-top: 52vh;
+    width:17%;
+    height: 46%;
+    margin-top: 49vh;
     margin-left: 22vw;
-    transform: rotateZ(-90deg);
 }
 h1{
     float: left;

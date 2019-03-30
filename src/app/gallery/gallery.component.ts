@@ -94,7 +94,7 @@ getxy(event: MouseEvent,number1:number){
    var rotatex=(((x*2)/height)*5) + 'deg';
    var rotatey=(((y*2)/width)*5) + 'deg';
    console.log(event.pageX,event.pageY);
-   var wid='rotate(-90deg) rotateX('+rotatex+') rotateY('+rotatey+')';
+   var wid='rotateX('+rotatex+') rotateY('+rotatey+')';
    const animationforgallery= this.builder.build([
      animate(300,style({
         transform: wid
@@ -106,7 +106,7 @@ getxy(event: MouseEvent,number1:number){
 changek(event: MouseEvent){
   const changeposition= this.builder.build([
     animate(200,style({
-      transform: 'rotate(-90deg) rotateX(0deg) rotateY(0deg)'
+      transform: 'rotateX(0deg) rotateY(0deg)'
     }))
   ]);
   var changeplay=changeposition.create(event.srcElement);
