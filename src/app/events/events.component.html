@@ -1,2 +1,35 @@
-<h1>Coming<br>Soon!</h1>
-<h3>Have Faith</h3>
+<h1 class="h1">Formal Event</h1>
+<section class="eventFormal">
+    <div class="arrow" (click)="moveImage3(alk)">
+        <img src="../../assets/icons/icons8-back-to-filled-100.png" alt="png"/>
+    </div>
+    <div class="imageWrapper">
+    <div class="imageFixed" #alk>
+        <div *ngFor="let a of list.slice(0,8)" class="event" [attr.data-text]="a">
+            <img class="img" src="../../assets/images/dummy/index3.jpg" alt="">
+        </div>
+        </div>
+    </div>
+    <div class="arrow" (click)="moveImage1(alk)">
+        <img src="../../assets/icons/icons8-next-page-filled-100.png" />
+    </div>
+</section>
+
+<h1 class="h1">Informal Event</h1>
+
+<section class="eventInformal">
+    <div class="arrow" (click)="moveImage4(sar)">
+        <img src="../../assets/icons/icons8-back-to-filled-100.png" alt="">
+    </div>
+
+    <div class="imageWrapper">
+        <div class="imageFixed" #sar>
+            <div *ngFor="let a of list.slice(0,9)"  class="event" [attr.data-text]="a">
+                <img class="img" src="../../assets/images/dummy/index3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div (click)="moveImage2(sar)" class="arrow">
+        <img src="../../assets/icons/icons8-next-page-filled-100.png" alt="">
+    </div>
+</section>
