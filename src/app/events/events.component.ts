@@ -58,7 +58,7 @@ export class EventsComponent implements OnInit {
   moveImage1(element:HTMLElement) {
       if(this.number1<3){
         this.number1=this.number1+1;
-        var translate1 =  this.number1*370 ;
+        var translate1 =  this.number1*270 ;
         console.log(this.number1,translate1);
     const animations = this.builder.build([
       animate(300,style({
@@ -76,7 +76,7 @@ export class EventsComponent implements OnInit {
 moveImage2(element:HTMLElement){
     if(this.number2<3){
       this.number2=this.number2+1;
-      var translate1 =  this.number2*370 ;
+      var translate1 =  this.number2*270 ;
       console.log(this.number2,translate1);
   const animations = this.builder.build([
     animate(300,style({
@@ -94,7 +94,7 @@ else{
 moveImage3(element:HTMLElement){
   if(this.number1>0){
     this.number1=this.number1-1;
-    var translate1 =  this.number1*370 ;
+    var translate1 =  this.number1*270 ;
     console.log(this.number1,translate1);
 const animations = this.builder.build([
   animate(300,style({
@@ -112,7 +112,7 @@ else{
 moveImage4(element:HTMLElement){
   if(this.number2>0){
     this.number2=this.number2-1;
-    var translate1 =  this.number2*370 ;
+    var translate1 =  this.number2*270 ;
     console.log(this.number2,translate1);
 const animations = this.builder.build([
   animate(300,style({
@@ -142,10 +142,10 @@ overflowleft(element: HTMLElement){
 overflowright(element: HTMLElement){
   const anm=this.builder.build([
     animate(200,style({
-      transform: 'translateX(-1115px)'
+      transform: 'translateX(-825px)'
     })),
     animate(200,style({
-      transform: 'translateX(-1100px)'
+      transform: 'translateX(-810px)'
     }))
   ])
   var play3=anm.create(element);
