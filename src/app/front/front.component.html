@@ -1,2 +1,19 @@
-<h1>Coming<br>Soon!</h1>
-<h3>Have Faith</h3>
+<div id="heading">Team</div>
+<div id="lefticon1" (click)="shiftleft(upper,lower)"><img src="../assets/images/icons/left-arrow.png" alt=""></div>
+<div id="wrapper">
+    <div id="upperblock" #upper>
+        <div class="innerdiv" *ngFor="let a of teamlist" [attr.src]="a.src">
+            <div class="content"><h2>{{a.name}}<br>{{a.teampart}}</h2></div>
+            <div class="imagesrc"><img src="{{a.src}}" alt=""></div>
+        </div>
+    </div>
+        <div id="lowerblock" #lower>
+                <div class="innerdiv" *ngFor="let b of teamlist1" [attr.src]="b.src">
+                    <div class="content"><h2>{{b.name}}<br>{{b.teampart}}</h2></div>
+                <div class="imagesrc"><img src="{{b.src}}" alt=""></div>
+            </div>
+     </div>
+</div>
+<div id="righticon2" (click)="shiftright(upper,lower)"><img src="../assets/images/icons/rightarrow.png" alt=""></div>
+
+        

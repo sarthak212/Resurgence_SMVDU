@@ -1,2 +1,20 @@
-<h1>Coming<br>Soon!</h1>
-<h3>Have Faith</h3>
+
+<h1 id="heading">Gallery</h1>
+<div class="container">
+                        <div class="containergallery1" #firstcontainer>
+                            <div *ngFor="let a of listphoto" id="gallery{{a.id}}" class="innercontainer">
+                                <img (mousemove)="getxy($event,240)" src="{{a.src}}" (mouseleave)="changek($event)" alt="">
+                            </div>
+                        </div>
+                        <div class="containergallery2" #secondcontainer>
+                            <div *ngFor="let a of listphotos" id="gallery{{a.id}}" class="innercontainer">
+                                <img (mousemove)="getxy($event,491)" (mouseleave)="changek($event)" src="{{a.src}}" alt="">
+                            </div>
+                        </div>
+                        <div class="arrowright">
+                                <img (click)="down(firstcontainer,secondcontainer)" src="{{leftsrc}}" alt="">
+                             </div>
+                             <div class="arrowleft">
+                                     <img (click)="up(firstcontainer,secondcontainer)" src="{{rightsrc}}" alt="">
+                              </div>
+</div>

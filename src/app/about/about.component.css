@@ -3,8 +3,10 @@
     position: fixed;
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(to right,#282828,#303030,#404040,#505050);
+    background-image: linear-gradient(to bottom,rgb(43,53,80),rgb(18,32,51),rgb(14,29,46),rgb(38,52,64));
     background-size: cover;
+    top: 0;
+    left: 0;
 }
 .paragraph{
     position: absolute;
@@ -66,8 +68,8 @@
 }
 h1{
     float: left;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 4rem;
+    font-family: 'Bree Serif';
+    font-size: 4.5rem;
     width: 15%;
     margin-left: 20vw;
     margin-top: 20px;

@@ -1,48 +1,73 @@
 :host{
     display:block;
-    background-color: #00ffff;
+    background-color: #14232b;
+    background-size: cover;
     height: 100vh;
     width: 100%;
     top:0;
     left:0;
     position: fixed;
   } 
-h1{
-    color: white;
-    text-align: center;
-    font-size: 6rem;
-    font-family: 'Baloo Chettan', cursive;
-    text-shadow: 13px 13px rgba(0,0,0,.2);
-    margin-top: 30vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    animation-name: movement;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  .containergallery1{
+    display: table;
+    perspective: 2000px;
+    position: absolute;
+    margin-left: 20vw;
+    margin-top: 1vh;
+    width: 25%;
+    height: 100%;
+    box-sizing: border-box;
   }
-  @keyframes movement{
-    0%{
-      transform: rotate(0deg);
-    }
-    25%{
-      transform: rotate(-8deg);
-    }
-    50%{
-      transform: rotate(0deg);
-    }
-    100%{
-      transform: rotate(8deg);
-    }
+  .containergallery2{
+    display: table;
+    perspective: 2000px;
+    position: absolute;
+    margin-left: 50vw;
+    margin-top: 1vh;
+    height: 100%;
+    width: 20%;
+    box-sizing: border-box;
+    transform: translateY(-213vh);
   }
-  h3{
-    font-size: 2rem;
-    float: right;
-    font-family: 'Noto Sans',sans-serif;
-    color: white;
-    position: fixed;
-    bottom: 7vh;
-    right: 5vw;
+  img{
+    display:table-cell;
+    vertical-align:middle;
+    transform: rotate(-90deg);
+    height: 43vh;
+    position: relative;  
+    top: 30px; 
   }
+  .innercontainer{
+    box-sizing: border-box;
+    height: 71vh;
+  }
+  .final{
+    transform: rotate(-90deg) rotateX(0deg) rotateY(50deg);
+  }
+.container {
+  height: 63vh;
+  top: 40px;
+  box-sizing: border-box;
+  position: relative;
+  display: flexbox;
+  overflow: hidden;
+}
+.arrowright{
+   transform:scale(.25);
+   float: right;
+   padding-right: 200px;
+   padding-top: 50px;
+}
+.arrowleft{
+  float: left;
+  transform:scale(.25);
+  padding-left: 150px;
+  padding-top: 100px;
+}
+#heading{
+  font-size: 3rem;
+  font-family: 'Playfair Display SC';
+  padding-left: 70px;
+  margin-left: 20px;
+  color: white;
+}

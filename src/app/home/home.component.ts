@@ -44,20 +44,10 @@ export class HomeComponent implements OnInit {
         this.router.navigate(['about']);
     }
   }
-  imagelist=[{
-    image:'../assets/images/dummyimage/index.jpeg'
-  },{ image: '../assets/images/dummyimage/index1.jpeg'},
-{ image: '../assets/images/dummyimage/index2.jpeg'},
-{ image: '../assets/images/dummyimage/index3.jpeg'},
-{
-  image: '../assets/images/dummyimage/index4.jpeg'
-},
-{
-  image: '../assets/images/dummyimage/index5.jpeg'
-},
-{
-  image: '../assets/images/dummyimage/index6.jpeg'
-}]
+  gonext(){
+    this.router.navigate(['about']);
+  }
+
   constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
