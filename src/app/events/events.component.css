@@ -1,48 +1,77 @@
 :host{
     display: block;
     position: fixed;
-    background-color: #2e3649;
+    background-image: linear-gradient(to right,#181818,#303030,#484848,#686868);
     height: 100vh;
     width: 100%;
     top:0;
     left:0;
 }
-h1{
-    color: white;
-    text-align: center;
-    font-size: 6rem;
-    font-family: 'Baloo Chettan', cursive;
-    text-shadow: 13px 13px rgba(0,0,0,.2);
-    margin-top: 30vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    animation-name: movement;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-  @keyframes movement{
-    0%{
-      transform: rotate(0deg);
-    }
-    25%{
-      transform: rotate(-8deg);
-    }
-    50%{
-      transform: rotate(0deg);
-    }
-    100%{
-      transform: rotate(8deg);
-    }
-  }
-  h3{
-    font-size: 2rem;
-    float: right;
-    font-family: 'Noto Sans',sans-serif;
-    color: white;
-    position: fixed;
-    bottom: 7vh;
-    right: 5vw;
-  }
+
+.eventFormal {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.event {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;  
+}
+
+.event:before {
+  content: attr(data-text);
+  text-align: center;
+  color: black;
+  position: absolute;
+  top:10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  transform: rotateX(90deg);
+  transition: all 1s;
+}
+
+.event:hover::before {
+  transform: rotateX(0deg);
+}
+
+.eventInformal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.h1 {
+  margin-left: 100px;
+  font-size: 20px;
+  color: white;
+  display: inline;
+}
+
+
+.arrow {
+  margin-top: 6%;
+  margin-right: 1.5%;
+}
+
+
+
+
+
+.imageFixed { 
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img {
+  width: 350px;
+  height: 250px;
+}
+
+.imageWrapper {
+  width: 80%;
+  overflow: hidden;
+}
