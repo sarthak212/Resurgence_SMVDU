@@ -143,3 +143,23 @@ section{
 .popseventh{
     animation-delay: .6s;
 }
+
+@media screen and (max-width: 500px){
+    .navbar li{
+        margin-top: 10%;
+    }
+    .navbar li:first-child{
+        margin-top: 20%;
+    }
+    img{
+        display: inline-block;
+        width: 40%;
+        height: 40%;
+    }
+    .social li{
+        width: 20%;
+    }
+    .navbar li a{
+        font-size: 20px;
+    }
+}

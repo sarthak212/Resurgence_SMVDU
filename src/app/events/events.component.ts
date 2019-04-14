@@ -54,11 +54,15 @@ export class EventsComponent implements OnInit {
   number1=0;
   number2=0;
 
-
+  
   moveImage1(element:HTMLElement) {
+      var widthwindow=270;
+      if( window.innerWidth < 350) {
+        widthwindow=145;
+      }
       if(this.number1<3){
         this.number1=this.number1+1;
-        var translate1 =  this.number1*270 ;
+        var translate1 =  this.number1*widthwindow ;
         console.log(this.number1,translate1);
     const animations = this.builder.build([
       animate(300,style({
@@ -74,9 +78,13 @@ export class EventsComponent implements OnInit {
   }
 }
 moveImage2(element:HTMLElement){
+  var widthwindow=270;
+  if( window.innerWidth < 350) {
+    widthwindow=145;
+  }
     if(this.number2<3){
       this.number2=this.number2+1;
-      var translate1 =  this.number2*270 ;
+      var translate1 =  this.number2*widthwindow ;
       console.log(this.number2,translate1);
   const animations = this.builder.build([
     animate(300,style({
@@ -92,9 +100,13 @@ else{
 }
 }
 moveImage3(element:HTMLElement){
+  var widthwindow=270;
+  if( window.innerWidth < 350) {
+    widthwindow=145;
+  }
   if(this.number1>0){
     this.number1=this.number1-1;
-    var translate1 =  this.number1*270 ;
+    var translate1 =  this.number1*widthwindow ;
     console.log(this.number1,translate1);
 const animations = this.builder.build([
   animate(300,style({
@@ -110,9 +122,13 @@ else{
 }
 }
 moveImage4(element:HTMLElement){
+  var widthwindow=270;
+  if( window.innerWidth < 350) {
+    widthwindow=145;
+  }
   if(this.number2>0){
     this.number2=this.number2-1;
-    var translate1 =  this.number2*270 ;
+    var translate1 =  this.number2*widthwindow ;
     console.log(this.number2,translate1);
 const animations = this.builder.build([
   animate(300,style({
@@ -140,12 +156,18 @@ overflowleft(element: HTMLElement){
   play3.play();
 }
 overflowright(element: HTMLElement){
+  var left=825;
+  var right=810;
+  if(window.innerWidth < 350){
+    left=450;
+    right=435;
+  }
   const anm=this.builder.build([
     animate(200,style({
-      transform: 'translateX(-825px)'
+      transform: 'translateX(-'+left+'px)'
     })),
     animate(200,style({
-      transform: 'translateX(-810px)'
+      transform: 'translateX(-'+right+'px)'
     }))
   ])
   var play3=anm.create(element);

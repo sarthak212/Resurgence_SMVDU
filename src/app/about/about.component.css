@@ -75,3 +75,20 @@ h1{
 span:hover{
     transform: rotateY(180deg);
 }
+
+@media screen and (max-width: 481px){
+    h1 {
+        font-size: 1.5rem;
+    }
+    .paragraph span {
+        font-size: .7rem;
+    }
+    #firstimage, #secondimage, #thirdimage, #fourthimage{
+        display: none;
+    }
+    .paragraph {
+        width: 80%;
+        height: 50%;
+        top: 13%;
+    }
+}

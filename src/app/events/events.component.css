@@ -81,3 +81,25 @@
   width: 60%;
   overflow: hidden;
 }
+
+@media screen and (max-width: 481px){
+  .h1{
+    font-size: 1rem;
+  }
+  .arrowleft, .arrowright {
+    transform: scale(.3);
+  }
+  .arrowleft{
+    margin-left: -10%;
+  }
+  .arrowright {
+    margin-right: -10%;
+  }
+  .event {
+    width: 120%;
+  }
+  .img {
+    width: 150px;
+    height: 150px;
+  }
+}
