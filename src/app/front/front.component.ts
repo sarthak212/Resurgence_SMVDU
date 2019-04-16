@@ -128,16 +128,24 @@ teampart: 'Developer7'
 }];
 leftshift=0;
 shiftleft(upper: HTMLElement, lower: HTMLElement){
-  if(this.leftshift<3){
+  var shiftvar=14.27;
+  var shiftupper=14.27;
+  var k=3;
+  if( window.innerWidth <350){
+    shiftvar=52.6;
+    shiftupper=14.27;
+    k=6;
+  }
+  if(this.leftshift<k){
   this.leftshift=this.leftshift+1;
   const anim=this.builder.build([
     animate(400,style({
-      transform: 'translateX(-'+this.leftshift*14.27+'%)'
+      transform: 'translateX(-'+this.leftshift*shiftupper+'%)'
     }))
   ])
   const anim1=this.builder.build([
     animate(400,style({
-      transform: 'translateX(-'+this.leftshift*14.27+'%)'
+      transform: 'translateX(-'+this.leftshift*shiftvar+'%)'
     }))
   ])
   var play1=anim.create(upper);
@@ -149,16 +157,21 @@ shiftleft(upper: HTMLElement, lower: HTMLElement){
 }
 }
 shiftright(upper: HTMLElement, lower: HTMLElement){
+  var shiftvar=14.27;
+  var shiftupper=14.27;
+  if( window.innerWidth < 350){
+    shiftvar=52.6;
+  }
   if(this.leftshift>0){
   this.leftshift=this.leftshift-1;
   const anim=this.builder.build([
     animate(400,style({
-      transform: 'translateX(-'+this.leftshift*14.27+'%)'
+      transform: 'translateX(-'+this.leftshift*shiftupper+'%)'
     }))
   ])
   const anim1=this.builder.build([
     animate(400,style({
-      transform: 'translateX(-'+this.leftshift*14.27+'%)'
+      transform: 'translateX(-'+this.leftshift*shiftvar+'%)'
     }))
   ])
   var play1=anim.create(upper);
@@ -191,18 +204,26 @@ overflowleft(upper: HTMLElement,lower: HTMLElement){
   play2.play();
 }
 overflowright(upper: HTMLElement,lower: HTMLElement){
+  var shiftvarleft=42.81;
+  var shiftvarright=43.4;
+  var shiftupperleft=85.62;
+  var shiftupperright=86.2;
+  if( window.innerWidth < 350){
+    shiftvarleft=315.6;
+    shiftvarright=316.2;
+  }
   const anim=this.builder.build([
     animate(400,style({
-      transform: 'translateX(-43.4%)'
+      transform: 'translateX(-'+shiftupperright+'%)'
     })),style({
-      transform: 'translate(-42.81%)'
+      transform: 'translate(-'+shiftupperleft+'%)'
     })
   ])
   const anim1=this.builder.build([
     animate(400,style({
-      transform: 'translateX(-43.4%)'
+      transform: 'translateX(-'+shiftvarright+'%)'
     })),style({
-      transform: 'translate(-42.81%)'
+      transform: 'translate(-'+shiftvarleft+'%)'
     })
   ])
   var play1=anim.create(upper);

@@ -41,14 +41,14 @@ h5{
 }
 h2{
     text-align: center;
-    height: 5%;
+    height: 4%;
     padding: 5px 10px;
     border-radius: 10%;
     font-family: 'Lato',sans-serif;
     color: white;
     font-size: 1.2rem;
     border: 1px solid rgba(255,255,255,.6);
-    margin-top: 38%;
+    margin-top: 37%;
     margin-left: 46%;
 }
 h2:hover{

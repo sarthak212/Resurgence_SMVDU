@@ -29,7 +29,7 @@
         opacity: 0;
 }
 .innerdiv:hover .imagesrc{
-  transform: translateY(-23vw);
+  transform: translateY(-22vw);
   opacity: 1;
 }
 h2{
@@ -84,4 +84,36 @@ img{
   transform: scale(.4) rotate(90deg);
   top: 65%;
   left: 18%;
+}
+
+@media screen and (max-width: 480px){
+  #heading{
+    font-size: 2rem;
+    margin-left: 7px;
+    margin-top: 180px;
+  }
+  #lefticon1 {
+    transform: scale(.3) rotate(180deg);
+    left: 1%;
+  }
+  #righticon2 {
+    transform: scale(.3) rotate(180deg);
+    left: 1%;
+  }
+  h2{
+    font-size:1rem;
+  }
+  .content, .imagesrc {
+    width: 200px;
+  }
+  #wrapper {
+    margin-left: 36vw;
+  }
+  #upperblock {
+    width: 400%;
+  }
+  .innerdiv:hover .imagesrc{
+    transform: translateY(-70vw);
+    opacity: 1;
+  }
 }
